@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodieGram</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="projeto-restaurante.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-lSight bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">FoodieGram</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto justify-content-end" style="font-size: 20px;">
+          <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#highlights">Destaques</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#recipes">Explorar Receitas</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#forum">Fórum</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+          </li>
+      </ul>
+  </div>
+  </div>
+</nav>
+
+<!-- Banner -->
+<section class="banner">
+    <div class="container text-center">
+      <h1 class="display-4 mb-4">Bem-vindo ao FoodieGram!</h1>
+      <p class="lead mb-4">Compartilhe suas receitas favoritas, descubra novos sabores e conecte-se com outros entusiastas da culinária.</p>
+    </div>
+  </section>
+  
+  <!-- Sobre -->
+  <section id="about" class="bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="mb-4 text-center">Sobre o FoodieGram</h2>
+            <p class="lead text-center mb-4">FoodieGram é uma plataforma social para entusiastas da culinária compartilharem suas receitas, experiências gastronômicas e dicas culinárias. Nossa missão é promover a paixão pela culinária e inspirar as pessoas a experimentar novos pratos e técnicas de cozinha.</p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <div class="image-container">
+              <img src="img/foodieGram.jpeg" width="450" height="350" class="img-fluid" alt="Descrição da Imagem">
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+  
+  <!-- Destaques -->
+  <section id="highlights" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Destaques</h2>
+      <p class="lead text-center mb-4">Receitas Populares: As Favoritas da Semana que Todos Estão Buscando!.</p>
+       <!-- Cards de receitas populares -->
+       <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="image-container">
+              <img src="img/macarrao-ao-peste.jpeg" class="card-img-top" alt="..." style="height: 320px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Macarrão ao Pesto</h5>
+                <p class="card-text">Delicioso macarrão ao pesto com manjericão fresco, pinhões e queijo parmesão.</p>
+                <a href="recipeModal" class="btn btn-primary" data-toggle="modal" data-target="#recipeModal">Ver Receita</a>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                <div class="image-container">
+                <img src="img/salmão-fresco.jpeg" class="card-img-top" alt="..." style="height: 320px; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Salmão Grelhado com Molho</h5>
+                  <p class="card-text">Salmão fresco grelhado perfeitamente, servido com um delicioso molho de limão e ervas..</p>
+                  <a href="salmonRecipeModal" class="btn btn-primary" data-toggle="modal" data-target="#salmonRecipeModal">Ver Receita</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="image-container">
+              <img src="img/tiramisu-italiano.jpeg" class="card-img-top" alt="..." style="height: 320px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Tiramisu Italiano</h5>
+                <p class="card-text">Uma sobremesa clássica italiana com camadas de biscoitos de champanhe, café, mascarpone e cacau em pó</p>
+                <a href="tiramisuRecipeModal" class="btn btn-primary" data-toggle="modal" data-target="#tiramisuRecipeModal">Ver Receita</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal da Receita -->
+  <div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recipeModalLabel">Receita: Macarrão ao Pesto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Ingredientes:</h6>
+          <ul>
+            <li>300g de macarrão (preferencialmente tipo espaguete)</li>
+            <li>2 xícaras de folhas de manjericão fresco</li>
+            <li>2 dentes de alho</li>
+            <li>1/4 de xícara de pinhões (ou nozes, amêndoas, etc.)</li>
+            <li>1/2 xícara de queijo parmesão ralado</li>
+            <li>1/2 xícara de azeite de oliva extra virgem</li>
+            <li>Sal a gosto</li>
+            <li>Pimenta do reino a gosto</li>
+          </ul>
+          <h6>Modo de Preparo:</h6>
+          <ol>
+            <li>Em uma panela grande, ferva água salgada e cozinhe o macarrão até ficar al dente. Escorra e reserve.</li>
+            <li>Prepare o pesto: Em um processador, combine folhas de manjericão, alho, pinhões, queijo parmesão e azeite. Misture até formar uma pasta homogênea.</li>
+            <li>Aqueça o pesto em uma panela e adicione o macarrão cozido. Misture bem.</li>
+            <li>Sirva imediatamente, acompanhado de queijo parmesão ralado.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal da Receita -->
+  <div class="modal fade" id="salmonRecipeModal" tabindex="-1" role="dialog" aria-labelledby="salmonRecipeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="salmonRecipeModalLabel">Receita: Salmão Grelhado com Molho</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Ingredientes:</h6>
+          <ul>
+            <li>4 filés de salmão</li>
+            <li>Sal a gosto</li>
+            <li>Pimenta do reino a gosto</li>
+            <li>2 colheres de sopa de azeite de oliva</li>
+            <li>2 dentes de alho picados</li>
+            <li>1/4 de xícara de suco de limão</li>
+            <li>2 colheres de sopa de mel</li>
+            <li>1 colher de sopa de molho de soja</li>
+            <li>1 colher de chá de gengibre ralado</li>
+            <li>1 colher de sopa de coentro fresco picado</li>
+          </ul>
+          <h6>Modo de Preparo:</h6>
+          <ol>
+            <li>Tempere os filés de salmão com sal e pimenta do reino.</li>
+            <li>Em uma tigela pequena, misture o suco de limão, o mel, o molho de soja, o gengibre e o coentro. Reserve metade da mistura para servir como molho.</li>
+            <li>Aqueça o azeite em uma frigideira em fogo médio-alto. Adicione o alho picado e cozinhe por cerca de 1 minuto.</li>
+            <li>Adicione os filés de salmão à frigideira e cozinhe por 4-5 minutos de cada lado, ou até que o salmão esteja cozido e levemente dourado por fora.</li>
+            <li>Sirva o salmão grelhado regado com o molho reservado.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Modal da Receita -->
+  <div class="modal fade" id="tiramisuRecipeModal" tabindex="-1" role="dialog" aria-labelledby="tiramisuRecipeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tiramisuRecipeModalLabel">Receita: Tiramisu Italiano</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Ingredientes:</h6>
+          <ul>
+            <li>500g de queijo mascarpone</li>
+            <li>6 gemas de ovos</li>
+            <li>150g de açúcar</li>
+            <li>400ml de café forte</li>
+            <li>100ml de licor de café ou rum</li>
+            <li>200g de biscoitos do tipo champanhe</li>
+            <li>Cacau em pó para polvilhar</li>
+          </ul>
+          <h6>Modo de Preparo:</h6>
+          <ol>
+            <li>Em uma tigela, misture o queijo mascarpone com as gemas de ovos e o açúcar até obter uma mistura homogênea. Reserve.</li>
+            <li>Misture o café forte com o licor de café ou rum.</li>
+            <li>Em uma travessa, faça uma camada de biscoitos champanhe embebidos na mistura de café.</li>
+            <li>Em cima dos biscoitos, coloque uma camada da mistura de queijo mascarpone.</li>
+            <li>Repita as camadas até terminar os ingredientes, finalizando com uma camada de queijo mascarpone.</li>
+            <li>Leve à geladeira por pelo menos 4 horas ou até que fique firme.</li>
+            <li>Antes de servir, polvilhe cacau em pó sobre o tiramisu.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <!-- Explorar Receitas -->
+  <section id="recipes" class="bg-light py-5">
+      <div class="container">
+          <h2 class="mb-4 text-center">Explorar Receitas</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="image-container">
+                <img src="img/salada-quinoa.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;" >
+                <div class="card-body">
+                  <h5 class="card-title">Salada de Quinoa com Tomate, Pepino e Manjericão</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Ver Receita</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="image-container">
+                <img src="img/espetinho-de-fruta.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Espetinhos de Frutas com Molho de Chocolate</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Ver Receita</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="image-container">
+                <img src="img/sopa-cremosa.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Sopa Cremosa de Abóbora e Gengibre</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Ver Receita</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="image-container">
+                <img src="img/frango-assado.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Frango Assado com Ervas Mediterrâneas</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Ver Receita</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="image-container">
+                <img src="img/torta-de-limão.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Torta de Limão com Merengue Italiano</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Ver Receita</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="image-container">
+                <img src="img/fettuccine.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Fettuccine Alfredo com Camarão Grelhado</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Ver Receita</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+  </section>
+  
+  <!-- Fórum -->
+  <section id="forum" class="bg-light py-5">
+      <div class="container">
+          <h2 class="mb-4 text-center">Fórum de Discussão</h2>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card mb-4">
+                      <img src="img/festival.jpeg" class="card-img-top" alt="..." style="height: 150px; object-fit: cover;">
+                      <div class="card-body" style="padding: 20px;">
+                          <h5 class="card-title">Festivais Gastronômicos</h5>
+                          <p class="card-text">Informe os usuários sobre eventos culinários e festivais de alimentos e permita que compartilhem suas experiências.</p>
+                          <a href="#" class="btn btn-primary">Entrar no grupo</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card mb-4">
+                      <img src="img/salada-quinoa.jpeg" class="card-img-top" alt="..." style="height: 150px; object-fit: cover;">
+                      <div class="card-body" style="padding: 20px;">
+                          <h5 class="card-title">Receitas Vegetarianas</h5>
+                          <p class="card-text">Compartilhe suas receitas vegetarianas favoritas e discuta sobre alimentação saudável.</p>
+                          <a href="#" class="btn btn-primary">Entrar no grupo</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card mb-4">
+                      <img src="img/experiência.jpeg" class="card-img-top" alt="..." style="height: 150px; object-fit: cover;">
+                      <div class="card-body" style="padding: 20px;">
+                          <h5 class="card-title">Experiências Gastronômicas</h5>
+                          <p class="card-text">Compartilhe suas experiências em restaurantes, viagens gastronômicas e eventos culinários.</p>
+                          <a href="#" class="btn btn-primary">Entrar no grupo</a>
+                      </div>
+                  </div>
+              </div>
+  
+          </div>
+      </div>
+  </section>
+
+<!-- Seção Footer -->
+<footer class="footer bg-dark text-white py-3">
+  <div class="container text-center">
+    <p>FoodieGram - Todos os direitos reservados &copy; 2024</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="rolagem.js"></script>
+
+</body>
+</html>
