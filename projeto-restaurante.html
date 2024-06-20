@@ -14,7 +14,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-lSight bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">FoodieGram</a>
+    <h3 class="navbar-brand" href="#">FoodieGram</h3>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -65,7 +65,6 @@
       </div>
     </section>
     
-  
   <!-- Destaques -->
   <section id="highlights" class="py-5">
     <div class="container">
@@ -231,84 +230,304 @@
   </section>
   
   <!-- Explorar Receitas -->
-  <section id="recipes" class="bg-light py-5">
-      <div class="container">
-          <h2 class="mb-4 text-center">Explorar Receitas</h2>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="image-container">
-                <img src="img/salada-quinoa.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;" >
-                <div class="card-body">
-                  <h5 class="card-title">Salada de Quinoa com Tomate, Pepino e Manjericão</h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Ver Receita</a>
-                </div>
-              </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="image-container">
-                <img src="img/espetinho-de-fruta.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
-                <div class="card-body">
-                  <h5 class="card-title">Espetinhos de Frutas com Molho de Chocolate</h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Ver Receita</a>
-                </div>
-              </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="image-container">
-                <img src="img/sopa-cremosa.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
-                <div class="card-body">
-                  <h5 class="card-title">Sopa Cremosa de Abóbora e Gengibre</h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Ver Receita</a>
-                </div>
-              </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="image-container">
-                <img src="img/frango-assado.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
-                <div class="card-body">
-                  <h5 class="card-title">Frango Assado com Ervas Mediterrâneas</h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Ver Receita</a>
-                </div>
-              </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="image-container">
-                <img src="img/torta-de-limão.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
-                <div class="card-body">
-                  <h5 class="card-title">Torta de Limão com Merengue Italiano</h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Ver Receita</a>
-                </div>
-              </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="image-container">
-                <img src="img/fettuccine.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
-                <div class="card-body">
-                  <h5 class="card-title">Fettuccine Alfredo com Camarão Grelhado</h5>
-                  <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Ver Receita</a>
-                </div>
-              </div>
-              </div>
+<section id="recipes" class="bg-light py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">Explorar Receitas</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="image-container">
+            <img src="img/salada-quinoa.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Salada de Quinoa com Tomate, Pepino e Manjericão</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#quinoaRecipeModal">Ver Receita</a>
             </div>
           </div>
-  </section>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="image-container">
+            <img src="img/espetinho-de-fruta.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Espetinhos de Frutas com Molho de Chocolate</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#fruitSkewerRecipeModal">Ver Receita</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="image-container">
+            <img src="img/sopa-cremosa.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Sopa Cremosa de Abóbora e Gengibre</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#pumpkinSoupRecipeModal">Ver Receita</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="image-container">
+            <img src="img/frango-assado.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Frango Assado com Ervas Mediterrâneas</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#roastChickenRecipeModal">Ver Receita</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="image-container">
+            <img src="img/torta-de-limão.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Torta de Limão com Merengue Italiano</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#lemonPieRecipeModal">Ver Receita</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="image-container">
+            <img src="img/fettuccine.jpeg" class="card-img-top" alt="..." style="height: 300px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Fettuccine Alfredo com Camarão Grelhado</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#fettuccineRecipeModal">Ver Receita</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal da Receita de Salada de Quinoa -->
+<div class="modal fade" id="quinoaRecipeModal" tabindex="-1" role="dialog" aria-labelledby="quinoaRecipeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="quinoaRecipeModalLabel">Receita: Salada de Quinoa com Tomate, Pepino e Manjericão</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredientes:</h6>
+        <ul>
+          <li>1 xícara de quinoa</li>
+          <li>2 xícaras de água</li>
+          <li>1 tomate grande, picado</li>
+          <li>1 pepino, picado</li>
+          <li>1/4 xícara de folhas de manjericão fresco, picado</li>
+          <li>2 colheres de sopa de azeite de oliva</li>
+          <li>1 colher de sopa de vinagre balsâmico</li>
+          <li>Sal e pimenta a gosto</li>
+        </ul>
+        <h6>Modo de Preparo:</h6>
+        <ol>
+          <li>Enxágue a quinoa em água corrente.</li>
+          <li>Em uma panela, ferva a água e adicione a quinoa. Reduza o fogo, tampe e cozinhe por 15 minutos ou até que a água seja absorvida.</li>
+          <li>Deixe a quinoa esfriar e misture com o tomate, pepino e manjericão.</li>
+          <li>Tempere com azeite, vinagre, sal e pimenta.</li>
+          <li>Misture bem e sirva.</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal da Receita de Espetinhos de Frutas -->
+<div class="modal fade" id="fruitSkewerRecipeModal" tabindex="-1" role="dialog" aria-labelledby="fruitSkewerRecipeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="fruitSkewerRecipeModalLabel">Receita: Espetinhos de Frutas com Molho de Chocolate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredientes:</h6>
+        <ul>
+          <li>1 xícara de morangos, cortados ao meio</li>
+          <li>1 xícara de uvas</li>
+          <li>1 xícara de pedaços de abacaxi</li>
+          <li>1 xícara de pedaços de melão</li>
+          <li>100g de chocolate meio amargo</li>
+          <li>2 colheres de sopa de creme de leite</li>
+        </ul>
+        <h6>Modo de Preparo:</h6>
+        <ol>
+          <li>Em espetos de madeira, intercale as frutas.</li>
+          <li>Derreta o chocolate em banho-maria e misture com o creme de leite.</li>
+          <li>Sirva os espetinhos de frutas com o molho de chocolate.</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal da Receita de Sopa Cremosa de Abóbora -->
+<div class="modal fade" id="pumpkinSoupRecipeModal" tabindex="-1" role="dialog" aria-labelledby="pumpkinSoupRecipeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pumpkinSoupRecipeModalLabel">Receita: Sopa Cremosa de Abóbora e Gengibre</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredientes:</h6>
+        <ul>
+          <li>500g de abóbora, descascada e picada</li>
+          <li>1 cebola picada</li>
+          <li>2 dentes de alho picados</li>
+          <li>1 pedaço de gengibre fresco, picado</li>
+          <li>4 xícaras de caldo de legumes</li>
+          <li>1/2 xícara de creme de leite</li>
+          <li>Sal e pimenta a gosto</li>
+        </ul>
+        <h6>Modo de Preparo:</h6>
+        <ol>
+          <li>Em uma panela grande, aqueça o azeite e refogue a cebola, alho e gengibre até dourar.</li>
+          <li>Adicione a abóbora e o caldo de legumes, cozinhe até a abóbora ficar macia.</li>
+          <li>Bata a sopa no liquidificador até ficar homogênea.</li>
+          <li>Volte a sopa à panela, adicione o creme de leite e tempere com sal e pimenta.</li>
+          <li>Aqueça bem e sirva.</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal da Receita de Frango Assado -->
+<div class="modal fade" id="roastChickenRecipeModal" tabindex="-1" role="dialog" aria-labelledby="roastChickenRecipeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="roastChickenRecipeModalLabel">Receita: Frango Assado com Ervas Mediterrâneas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredientes:</h6>
+        <ul>
+          <li>1 frango inteiro</li>
+          <li>2 colheres de sopa de azeite de oliva</li>
+          <li>1 colher de sopa de alecrim fresco</li>
+          <li>1 colher de sopa de tomilho fresco</li>
+          <li>1 colher de sopa de orégano fresco</li>
+          <li>Sal e pimenta a gosto</li>
+        </ul>
+        <h6>Modo de Preparo:</h6>
+        <ol>
+          <li>Pré-aqueça o forno a 200°C.</li>
+          <li>Tempere o frango com azeite, ervas, sal e pimenta.</li>
+          <li>Asse o frango por 1 hora e 30 minutos ou até ficar bem dourado e cozido por dentro.</li>
+          <li>Deixe descansar por 10 minutos antes de cortar e servir.</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal da Receita de Torta de Limão -->
+<div class="modal fade" id="lemonPieRecipeModal" tabindex="-1" role="dialog" aria-labelledby="lemonPieRecipeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="lemonPieRecipeModalLabel">Receita: Torta de Limão com Merengue Italiano</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredientes:</h6>
+        <ul>
+          <li>1 lata de leite condensado</li>
+          <li>1/2 xícara de suco de limão</li>
+          <li>Raspas de 1 limão</li>
+          <li>3 claras de ovo</li>
+          <li>1 xícara de açúcar</li>
+          <li>1 massa de torta pronta</li>
+        </ul>
+        <h6>Modo de Preparo:</h6>
+        <ol>
+          <li>Pré-aqueça o forno a 180°C.</li>
+          <li>Misture o leite condensado com o suco de limão e as raspas de limão.</li>
+          <li>Despeje a mistura na massa de torta e asse por 10 minutos.</li>
+          <li>Enquanto isso, bata as claras em neve e adicione o açúcar aos poucos até formar picos firmes.</li>
+          <li>Despeje o merengue sobre a torta e asse até dourar levemente.</li>
+          <li>Deixe esfriar antes de servir.</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal da Receita de Fettuccine Alfredo -->
+<div class="modal fade" id="fettuccineRecipeModal" tabindex="-1" role="dialog" aria-labelledby="fettuccineRecipeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="fettuccineRecipeModalLabel">Receita: Fettuccine Alfredo com Camarão Grelhado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredientes:</h6>
+        <ul>
+          <li>300g de fettuccine</li>
+          <li>200g de camarão</li>
+          <li>2 colheres de sopa de manteiga</li>
+          <li>1 dente de alho picado</li>
+          <li>1 xícara de creme de leite</li>
+          <li>1/2 xícara de queijo parmesão ralado</li>
+          <li>Sal e pimenta a gosto</li>
+        </ul>
+        <h6>Modo de Preparo:</h6>
+        <ol>
+          <li>Cozinhe o fettuccine conforme as instruções da embalagem.</li>
+          <li>Em uma frigideira, grelhe os camarões com manteiga e alho até ficarem rosados.</li>
+          <li>Adicione o creme de leite e o queijo parmesão, misturando bem.</li>
+          <li>Tempere com sal e pimenta.</li>
+          <li>Misture o fettuccine ao molho e sirva quente.</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   
   <!-- Fórum -->
   <section id="forum" class="bg-light py-5">
